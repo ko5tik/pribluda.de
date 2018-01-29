@@ -1,0 +1,28 @@
+{
+  "locals": {
+    "url": "http://localhost:8080",
+    "name": "Konstantin Pribluda",
+    "owner": "Konstantin Pribluda",
+    "description": "Homepage, blog, assorted projects, tools and shameless self advertising"
+  },
+  "plugins": [
+    "./plugins/paginator.coffee",
+    "wintersmith-less"
+  ],
+  "require": {
+    "moment": "moment",
+    "_": "underscore",
+    "typogr": "typogr"
+  },
+  "jade": {
+    "pretty": true
+  },
+  "markdown": {
+    "smartLists": true,
+    "smartypants": true
+  },
+  "paginator": {
+    "perPage": 3
+  },
+  "less": {}
+}
