@@ -7,7 +7,8 @@
   },
   "plugins": [
     "./plugins/paginator.coffee",
-    "wintersmith-less"
+    "wintersmith-less",
+    "wintersmith-tag"
   ],
   "require": {
     "moment": "moment",
