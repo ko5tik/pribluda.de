@@ -1,7 +1,7 @@
 ---
 title: Projects
 date: 2018-01-29
-template: article.jade
+template: apps.jade
 ---
 
 ### Overview

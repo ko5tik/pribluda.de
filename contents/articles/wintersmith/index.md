@@ -9,7 +9,7 @@ Recently I had to upgrade server, and  found that ancient technologies are not a
  
  <span class="more"></span>
 
-A long time ago in another galaxy (or better said in another century) I created my website using technologies available back then
+A long time ago in another galaxy (or better said in another century) I created my website using technologies available back then:
 
  - Apache
  - mod_perl
