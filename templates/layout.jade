@@ -34,6 +34,9 @@ html(lang='en')
         div.content-wrap
             block footer
                 section.copy
-                    p &copy; #{ new Date().getFullYear() } #{ locals.owner } &mdash; powered by&nbsp;
+                    p &copy; #{ new Date().getFullYear() } #{ locals.owner } &mdash;
+                        a(href="privacy/") privacy
+
+                        |&nbsp; powered by&nbsp;
                         a(href='https://github.com/jnordberg/wintersmith') Wintersmith
                         //- please leave the "powered by" if you use the design
