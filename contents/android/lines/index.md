@@ -9,6 +9,8 @@ icon: icon.png
 
 
 
+<span class="icon">
+![icon](icon.png)
 
 Logic and concentration game. Arrange color balls in straight lines of 5 
 or more to remove them and earn points. New balls are placed on every turn. 
