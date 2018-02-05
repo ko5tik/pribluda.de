@@ -1,7 +1,35 @@
 extends layout
 
+
+
 block header
     h1= page.title
 
 block content
     != page.html
+
+    - console.log("-----------------------------------'");
+    - console.log(page.metadata)
+
+
+    each app in contents.android._.directories.sort(function(a,b){ a.index.title > b.index.title})
+        if  "article.jade" == app.index.template
+            - var idx = app.index;
+            - console.log(idx.title)
+
+
+            article.article.intro
+                header
+                    p.date
+                        span= ""
+                    h2
+                        idx.title
+                section.content
+                    if idx.intro.length > 0
+                        != typogr(idx.intro).typogrify()
+                    if idx.hasMore
+                        p.more
+                            a(href=idx.url) more
+
+
+
