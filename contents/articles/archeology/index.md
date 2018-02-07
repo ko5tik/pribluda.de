@@ -3,6 +3,7 @@ title: Code archeology
 author: pribluda
 date: 2018-01-31
 template: article.jade
+lang: en
 ---
 
 digging in my attic I found  stash of old CDRs from my student times. Back then I freelanced for small medical 
