@@ -1,7 +1,7 @@
 ---
-title: Talking tongues
+title: Speaking in tongues
 author: pribluda
-date: 2018-02-07
+date: 2018-02-09
 template: article.jade
 lang: en
 ---
