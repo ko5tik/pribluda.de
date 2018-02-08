@@ -88,8 +88,6 @@ module.exports = (env, callback) ->
       console.log page.lang
       rv.lang[page.lang + ".page"] = page # file extension is arbitrary
 
-    console.log rv
-
     # callback with the generated contents
     callback null, rv
 
