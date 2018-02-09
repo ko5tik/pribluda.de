@@ -6,8 +6,9 @@ template: article.jade
 lang: en
 ---
 
-I am learning  [wintersmith](https://github.com/jnordberg/wintersmith), anf now it is time to wwrite first plugin. I write in 
-multiple kanguages and can use some organisation so my readers can find suitable text easily. Let's do it.
+I am learning  [wintersmith](https://github.com/jnordberg/wintersmith), anf now it is time to write first plugin. I write in 
+multiple kanguages and can use some organisation so my readers can find suitable text easily. Of course it is based on basic paginatorplugin, 
+but we have to start somewhere. Let's do it.
 
 <span class="more"></span>
 
