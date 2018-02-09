@@ -179,6 +179,12 @@ And here comes template,  list of articles is available in context:
                         a(href=article.url) more
 ```
 
+...  and now check those little flag icons on top navbar
+
+  * [German](/lang/de/)
+  * [English](/lang/en)
+  
+  
 
  * See full source on [Github](https://github.com/ko5tik/pribluda.de)
  * Question and discussion on G+
