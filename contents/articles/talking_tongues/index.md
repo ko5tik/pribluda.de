@@ -188,4 +188,4 @@ And here comes template,  list of articles is available in context:
   
 
  * See full source on [Github](https://github.com/ko5tik/pribluda.de)
- * Question and discussion on G+
+ * Question and discussion on [G+](https://plus.google.com/+KonstantinPribluda/posts/ZtTZAt3BGjX)
