@@ -15,8 +15,8 @@ Zeit auf dem Bildschirm. Als Text. In verschiedenen Dialekten.
 
 <span class="more"></span>
 
-Diese App zeigt die Uhrzeit in verschiedenen deutscheDIalekte auf dem Buldschirm. Sonst tut es nichts.  Es ist ein Widget. Und es 
-ist möglich  mehrere verschiedene Varianten gleichzeitig zu verwenden. 
+Diese App zeigt die Uhrzeit in verschiedenen deutsche DIalekten auf dem Buldschirm. Sonst tut es nichts.  Es ist ein Widget. Und es 
+ist mÃ¶glich  verschiedene Varianten gleichzeitig zu verwenden. 
  
 
 ![Screenshot](screenshot.png)
