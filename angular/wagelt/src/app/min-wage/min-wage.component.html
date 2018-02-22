@@ -1,0 +1,75 @@
+<div class="wage-calculator">
+  <div>
+    <label>
+      Миниимальная зарплата:
+    </label>
+    <div class="result">
+      {{calculator.minimalWage }} &euro;
+    </div>
+  </div>
+  <div>
+    <label>
+      Ваша зарплата:
+    </label>
+    <div class="result">
+      <input [ngModel]="calculator.wageBrutto" (ngModelChange)="updateBrutto($event)"
+             placeholder="{{calculator.wageBrutto | number:'1.2-2'}}" pattern="[0-9\\.]{8}">
+    </div>
+  </div>
+  <div>
+    <label>
+      Подоходный налог ({{calculator.taxRateWorker | percent}}):
+    </label>
+    <div class="result">
+      {{calculator.taxAmountWorker| number:'1.2-2'}} &euro;
+    </div>
+  </div>
+  <div>
+    <label>
+      Личный взнос в соц страх ({{calculator.sodraRateWorker | percent}}):
+    </label>
+    <div class="result">
+      {{calculator.sodraAmountWorker | number:'1.2-2'}} &euro;
+    </div>
+  </div>
+  <div>
+    <label>
+      Итого вам достанется:
+    </label>
+    <div class="result">
+      <input [ngModel]="calculator.wageNetto " (ngModelChange)="updateNetto($event)"
+             placeholder="{{calculator.wageNetto | number:'1.2-2'}}" pattern="[0-9\\.]{8}">
+    </div>
+  </div>
+  <div>
+    <label>
+      Взносы работодателя на соцстрах (30,98-31,7%):
+    </label>
+    <div class="result">
+      <input [(ngModel)]="sodraRateCompany" placeholder="{{calculator.sodraRateCompany|percent}}" pattern="[0-9\\.]{5}">
+    </div>
+    <div class="result">
+      {{calculator.sodraAmountCompany| number:'1.2-2'}} &euro;
+    </div>
+  </div>
+
+
+  <div>
+    <label>
+      Итого ваш работодатель отдаст денег:
+    </label>
+    <div class="result">
+      <input [ngModel]="calculator.companyTotal" (ngModelChange)="updateTotal($event)"
+             placeholder="{{calculator.companyTotal| number:'1.2-2'}}" pattern="[0-9\\.]{8}">
+    </div>
+  </div>
+
+  <div>
+    <label>
+      От этих денег вам достанется:
+    </label>
+    <div class="result">
+      {{ calculator.percentState | percent}}
+    </div>
+  </div>
+</div>
