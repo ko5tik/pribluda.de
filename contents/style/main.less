@@ -1,4 +1,11 @@
 
+.logo {
+  h1 {
+    margin-bottom: 1em;
+  }
+}
+
+
 h1, h2, h3, h4, h5, h6, p, body, a, img, ul, ol, blockquote, pre {
   margin: 0;
   padding: 0;
@@ -170,7 +177,7 @@ hr {
   font-size: 1.2em;
   font-style: italic;
   text-align: center;
-  margin-top: -0.3em;
+  margin-top: 0.5em;
 }
 
 body.article-detail > header h1 {
@@ -226,7 +233,6 @@ footer .copy {
 footer .copy, footer .copy a {
   color: #8e8e8e;
 }
-
 
 /*  icon image shall go in teaser */
 #icon img {
@@ -292,15 +298,13 @@ footer .copy, footer .copy a {
   padding-left: 0.3em;
 }
 
-
-
-
 .article .content .icon img {
   width: 64px;
   height: 64px;
   float: left;
   padding: 0.5em;
 }
+
 .more, .date {
   font-variant: small-caps;
   text-transform: lowercase;
@@ -459,6 +463,34 @@ code.lang-markdown .bullet {
   color: #8959a8;
 }
 
+/* globals for tools */
+.wage-calculator {
+  div {
+    overflow: auto;
+  }
+;
+}
+
+.tool {
+  input {
+    text-align: right;
+    margin-right: 1em;
+
+  }
+  label {
+    align: left;
+    float: left;
+    margin-bottom: 0.5em;
+  }
+  .result {
+    align: right;
+    float: right;
+    clear: right;
+    margin-bottom: 0.5em;
+  }
+
+}
+
 /* media queries */
 
 @media (min-width: 1600px) {
@@ -485,7 +517,7 @@ code.lang-markdown .bullet {
 
   .header h1 {
     font-size: 1.4em;
-    margin-bottom: 0.6em;
+    margin-bottom: 1em;
   }
 
   .header .description {
