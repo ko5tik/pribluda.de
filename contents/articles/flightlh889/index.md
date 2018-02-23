@@ -38,7 +38,7 @@ That bright spot is actually jupiter. Mars is nearby but my phone camera is unab
 
 ![](IMG_20180130_082739.jpg)
 
-Approach frankfurt - over Hanau. You can se Staudinger powerplant (that steam column near the river bend)
+Approach Frankfurt - over Hanau. You can se Staudinger powerplant (that steam column near the river bend)
 
 
 ![](IMG_20180206_072049_HHT.jpg)

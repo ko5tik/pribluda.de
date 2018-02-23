@@ -36,4 +36,8 @@ lang: ru
 Сделано руками,  при помощи ангуляра.  Если чего надо - обращайтесь. 
 
 
-[А тут лицензии на полезные штукм](licenses.txt)
+[А тут лицензии на полезные штуки](licenses.txt)
+
+[А исходники тут](https://github.com/ko5tik/pribluda.de/tree/master/angular/wagelt)
+
+если что неправильно -  пишите konstantin.pribluda[кусачее животное]gmail.com
