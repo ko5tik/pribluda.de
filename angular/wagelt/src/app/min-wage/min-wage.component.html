@@ -1,7 +1,7 @@
 <div class="wage-calculator">
   <div>
     <label>
-      Миниимальная зарплата:
+      Минимальная зарплата:
     </label>
     <div class="result">
       {{calculator.minimalWage }} &euro;
@@ -18,6 +18,22 @@
   </div>
   <div>
     <label>
+      Необлагаемый минимум:
+    </label>
+    <div class="result">
+      {{calculator.npd| number:'1.2-2'}} &euro;
+    </div>
+  </div>
+  <div>
+    <label>
+     Haлoг платится с суммы:
+    </label>
+    <div class="result">
+      {{calculator.taxableAmount| number:'1.2-2'}} &euro;
+    </div>
+  </div>
+  <div>
+    <label>
       Подоходный налог ({{calculator.taxRateWorker | percent}}):
     </label>
     <div class="result">
@@ -26,7 +42,7 @@
   </div>
   <div>
     <label>
-      Личный взнос в соц страх ({{calculator.sodraRateWorker | percent}}):
+      Личный взнос в соцстрах ({{calculator.sodraRateWorker | percent}}):
     </label>
     <div class="result">
       {{calculator.sodraAmountWorker | number:'1.2-2'}} &euro;
