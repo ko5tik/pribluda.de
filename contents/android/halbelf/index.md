@@ -5,8 +5,6 @@ template: article.jade
 icon: icon.png
 ---
 
-### Halb elf
-
 <span class="icon">
 ![icon](icon.png)
 </span>

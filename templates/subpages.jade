@@ -11,18 +11,14 @@ block content
 
 
 
-    each app in contents.android._.directories.sort(function(a,b){ a.index.title > b.index.title})
+    each app in page.parent._.directories.sort(function(a,b){ a.index.title > b.index.title})
+        - var idx = app.index;
+        - console.log(idx.title)
         if  "article.jade" == app.index.template
-            - var idx = app.index;
-            - console.log(idx.title)
-
-
             article.article.intro
                 header
-                    p.date
-                        span= ""
                     h2
-                        idx.title
+                        a(href=idx.url)= idx.title
                 section.content
                     if idx.intro.length > 0
                         != typogr(idx.intro).typogrify()

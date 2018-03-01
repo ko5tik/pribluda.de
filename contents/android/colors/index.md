@@ -5,8 +5,6 @@ template: article.jade
 icon: icon.png
 ---
 
-### Colors game
-
 <span class="icon">
 ![icon](icon.png)
 </span>

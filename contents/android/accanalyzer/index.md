@@ -5,7 +5,6 @@ template: article.jade
 icon: icon.png
 ---
 
-### Acceleratoin Spectrum
 
 
 <span class="icon">
@@ -13,7 +12,7 @@ icon: icon.png
 </span>
 
 
-A lot of vibrations around.  Some of them are good.  Let's look at the in detail 
+I'm pickin' up good vibrations....  Let's look at the in detail 
 
 <span class="more"></span>
 

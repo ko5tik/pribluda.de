@@ -1,7 +1,7 @@
 ---
 title: Android apps
 date: 2018-01-30
-template: apps.jade
+template: subpages.jade
 ---
 
 ### Android apps
