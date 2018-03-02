@@ -24,7 +24,7 @@ Unfortunately those libraries bring a lot of dependencies with them, and that is
 and precious - nobody likes 100MB apps. 
 
 So I went and wrote small and cosy json marshaller with only one external dependency -  [GSON](https://github.com/google/gson) - 
-which is very lightweight and provides just JSON parser. And this is my marshaller is used: 
+which is very lightweight and provides just JSON parser. 
 
 ### How it works
 
@@ -60,7 +60,7 @@ configuration issues in android app and simple local data storage.
 ### Sources
 
 Released unde apache license, sources are available on [Github](https://github.com/ko5tik/jsonserializer).  Compiled  version is available 
-from maven repositories
+from maven repositories:
 
 ```xml
 <dependency>
