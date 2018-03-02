@@ -2,22 +2,21 @@
 title: JSON Serializer
 date: 2018-01-29
 template: article.jade
-tags: java, json, marshall, serrialize, library, android
-description: simple and lightweight JSON marshalling library for android applications
+tags: java, json, marshall, serralize, library, android, deserialize
+description: simple and lightweight JSON marshalling library for android applications - in just 9659 bytes 
 ---
 
 
-Android apps shall be as small as possible - space on the phone is valuable real estate. So there shall be as few foreign 
-dependencies as possible. But we ike to have nice things like JSON conversion -  and good marshallling and unmarshalling 
-libraries are big and rich on dependencies.    
+Serialize simple and not so simple data structures to JSON 
+(like game state of [lines game](/android/lines/))  under android
 
 <span class="more"></span>
 
 ### why do we need this
 
-In my android apps I often need to save state (for example when it loses focus, it can be killed at anz moment and I would like 
-to present the same game state when user opens it again).  Saving complext data models means a lot of work -  so some 
-object marshalling solution would be nice.  And there are a lot of nice and easy to use tool -  [XStream](http://x-stream.github.io/) 
+In my android apps I often need to save state (for example when it loses focus, it can be killed at any moment - but I would like 
+to present the same game state when user opens it again).  Saving complex data models means a lot of work -  so some 
+object marshalling solution would be nice.  And there are a lot of nice and easy to use tools -  [XStream](http://x-stream.github.io/) 
 being my favorite due to great speed and simple usage. 
 
 Unfortunately those libraries bring a lot of dependencies with them, and that is not nice on android.  Internal storage  is small 
@@ -42,24 +41,35 @@ ArrayList<Camera> cameras = new ArrayList<Camera>(JSONUnmarshaller.unmarshallArr
                     
 ```
 
-And writing:
+As ypu  may imagone, it just reads an array of some class out of JSON  reader.  Just say what and where. 
+
+And writing is also easy (actually current state of [lines game](/android/lines/) when focus is lost):
+
 ```java
 
-JSONMarshaller.marshallArray(new JsonWriter(new OutputStreamWriter(outputStream), )
+StringWriter writer = new StringWriter();
+JsonWriter jsonWriter = new JsonWriter(writer);
+
+
+JSONMarshaller.marshall(jsonWriter, ss);
+editor.putString(GAME_STATE, writer.toString());
+editor.commit();
+
 ```
 
-nothing more than that.
+nothing more than that (in case you are wondering - editor stores values in app preferences).
+
 
 ### Features
 
-This is not a full blown customisable marshalling library  - if you need this go for xstream or whatever you like.  This library will
+This is not a full blown customisable marshalling library  - if you need this go for XStream or whatever you like.  This library will
 read and write simple java beans with well behaved getters and setters, and also arrays of those  objects. Not much, but enough for most 
 configuration issues in android app and simple local data storage.
 
 
 ### Sources
 
-Released unde apache license, sources are available on [Github](https://github.com/ko5tik/jsonserializer).  Compiled  version is available 
+Released under apache license, sources are available on [Github](https://github.com/ko5tik/jsonserializer).  Compiled  version is available 
 from maven repositories:
 
 ```xml
@@ -69,3 +79,5 @@ from maven repositories:
     <version>0.6</version>
 </dependency>
 ```
+
+Have fun. And guess how big is it - 9659 bytes!

@@ -7,8 +7,10 @@ html(lang='en')
             meta(charset='utf-8')
             meta(http-equiv='X-UA-Compatible', content='IE=edge,chrome=1')
             meta(name='viewport', content='width=device-width')
+            - if( page && page.metadata) {
             meta(name="description" content=page.metadata.description)
             meta(name="keywords" content=page.metadata.tags)
+            - }
             title
                 block title
                     = locals.name
@@ -39,6 +41,6 @@ html(lang='en')
                     p &copy; #{ new Date().getFullYear() } #{ locals.owner } &mdash;
                         a(href="privacy/") privacy
 
-                        |&nbsp; powered by&nbsp;
+                        | &nbsp; powered by&nbsp;
                         a(href='https://github.com/jnordberg/wintersmith') Wintersmith
                         //- please leave the "powered by" if you use the design
