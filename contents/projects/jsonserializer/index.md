@@ -41,7 +41,7 @@ ArrayList<Camera> cameras = new ArrayList<Camera>(JSONUnmarshaller.unmarshallArr
                     
 ```
 
-As ypu  may imagone, it just reads an array of some class out of JSON  reader.  Just say what and where. 
+As you  may imagine, it just reads an array of some class out of JSON  reader.  Just say what and where from. 
 
 And writing is also easy (actually current state of [lines game](/android/lines/) when focus is lost):
 
