@@ -61,4 +61,4 @@ Genießen:
 ![Ab auf den Teller damit](teller.jpg)
 
 
-Mir und anderen Anwesenden hat es geschmeckt,  es wird aber keine Haftung fürs gelingen und genießbarkeit übernommen.
+Mir und anderen Anwesenden hat es geschmeckt,  es wird aber keine Haftung fürs Gelingen und Genießbarkeit übernommen.
