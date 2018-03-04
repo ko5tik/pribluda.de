@@ -12,7 +12,7 @@ Eliminate android boilerplate code and save your time with lightweight dependenc
 <span class="more"></span>
 
 Dependency injection is not exactly new, and  made our lives easier since early 2000s (most popular being Spring, but there were alternatives
-like pico/nanocontainer which I  co developed)- However they were not really useful in android world due to heavy weight and different lifecycles of 
+like pico/nanocontainer which I  co developed). However,  they were not really useful in android world due to heavy weight and different lifecycles of 
 components - and lack of well defined scopes (like application - session - request in web environment)
 
 Android already assembles an application, with all the views, layouts and components - but getting to those components from your code requires 
@@ -90,7 +90,7 @@ preference activity)
 
 The same problem is with views -  you need to references them in code -   for setting values, retrieving them, registering callbacks -  and you have to reestablish those relations after every 
 focus loss (you can not be sure that your app was not restarted). So here comes simple view injector:
- * annotate view references
+ * annotate view references (or just plain setters - see in tests)
  
 ```java 
 
@@ -129,13 +129,13 @@ focus loss (you can not be sure that your app was not restarted). So here comes 
 
 ``` 
   
-See [full source](https://github.com/ko5tik/accanalyser/blob/master/src/de/pribluda/android/accanalyzer/SpectralViewer.java)
+And all your views and components are where you like them to be in your code. See [full source](https://github.com/ko5tik/accanalyser/blob/master/src/de/pribluda/android/accanalyzer/SpectralViewer.java)
 
 And guess what - your IDs are compile-safe and always correct,   and if you change layout and remove some elements you get compile errors.
 
 
 ### Where to get it?   
 
-At the moment I had not cuta release intosome maven repository (have to find time, keystores, prepare and perform release....) - but 
+At the moment I had not cut a release into some maven repository (have to find time, keystores, prepare and perform release....) - but 
 [sources are available](https://github.com/ko5tik/andject) on github - so you can clone and build it yourself.  Or [grab a jar](./andject-0.1-SNAPSHOT.jar)
 Released under apache license. 
