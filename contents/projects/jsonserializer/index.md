@@ -1,6 +1,6 @@
 ---
 title: JSON Serializer
-date: 2018-01-29
+date: 2018-03-02
 template: article.jade
 tags: java, json, marshall, serralize, library, android, deserialize
 description: simple and lightweight JSON marshalling library for android applications - in just 9659 bytes 
