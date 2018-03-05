@@ -20,10 +20,10 @@ a lot of  boilerplate (getViewById(),  retrieve value from preferences  )- and t
 dependency injection library to cover just those problems.
 
 
-### Managong preferences
+### Managing preferences
 
-Configuration values configure out application (if you foun tautology here, you can keep it) - I like them as some klass properties.  UNfortunately, android stores 
-them in property stores,   and reading and writing requires some (way too much) effort: 
+Configuration values configure our application (if you found tautology here, you can keep it) - and I like confiuration values in my classes, so I can do something with them.  
+Unfortunately, android stores them in property stores,   and reading and writing requires some (way too much) effort: 
 
 
 ```java
@@ -54,8 +54,8 @@ them in property stores,   and reading and writing requires some (way too much) 
     
 ```
 
-I omitted some code and exceptions -  but you see that for every preference you shall be aware of typing and provide key name. Imagine doing this for 30 of them.  Being lazy programmer I do not like this. 
-And this is how it looks with *andject*:
+I omitted some code and exceptions -  but you see that for every preference you shall be aware of typing, and provide key name. Imagine doing this for 
+30 of them.  Being lazy programmer I do not like this.  And this is how it looks with *andject*:
 
  
 ```java
