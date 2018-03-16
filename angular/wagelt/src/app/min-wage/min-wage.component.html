@@ -12,8 +12,20 @@
       Ваша зарплата:
     </label>
     <div class="result">
-      <input [ngModel]="calculator.wageBrutto" (ngModelChange)="updateBrutto($event)"
-             placeholder="{{calculator.wageBrutto | number:'1.2-2'}}" pattern="[0-9\\.]{8}">
+      <input numberOnly="^[0-9]+(\.[0-9]*){0,1}$" [ngModel]="calculator.wageBrutto" (ngModelChange)="updateBrutto($event)"
+             placeholder="{{calculator.wageBrutto | number:'1.2-2'}}" >
+    </div>
+  </div>
+  <div>
+    <label>Учитывать добровольные 2% пенсии:</label>
+    <div class="result">
+      <input [ngModel]="calculator.useVoluntaryRent" (ngModelChange)="setVoluntaryRent($event)" type="checkbox"/>
+    </div>
+  </div>
+  <div>
+    <label>Учитывать необлагаемый минимум:</label>
+    <div class="result">
+      <input [ngModel]="calculator.useNonTaxableMinimum" (ngModelChange)="setNonTaxableMinimum($event)" type="checkbox"/>
     </div>
   </div>
   <div>
@@ -53,8 +65,8 @@
       Итого вам достанется:
     </label>
     <div class="result">
-      <input [ngModel]="calculator.wageNetto " (ngModelChange)="updateNetto($event)"
-             placeholder="{{calculator.wageNetto | number:'1.2-2'}}" pattern="[0-9\\.]{8}">
+      <input [ngModel]="calculator.wageNetto " (ngModelChange)="updateNetto($event)" numberOnly="^[0-9]+(\.[0-9]*){0,1}$"
+             placeholder="{{calculator.wageNetto | number:'1.2-2'}}">
     </div>
   </div>
   <div>
@@ -62,7 +74,10 @@
       Взносы работодателя на соцстрах (30,98-31,7%):
     </label>
     <div class="result">
-      <input [(ngModel)]="sodraRateCompany" placeholder="{{calculator.sodraRateCompany|percent}}" pattern="[0-9\\.]{5}">
+      <input [ngModel]="calculator.sodraRateCompany * 100 |  number:'1.2-2'" placeholder="{{calculator.sodraRateCompany| number:'1.2-2'}}"
+             numberOnly="^[0-9]+(\.[0-9]*){0,1}$"
+             (ngModelChange)="updateSodraRateCompany($event)"
+        >
     </div>
     <div class="result">
       {{calculator.sodraAmountCompany| number:'1.2-2'}} &euro;
@@ -76,7 +91,8 @@
     </label>
     <div class="result">
       <input [ngModel]="calculator.companyTotal" (ngModelChange)="updateTotal($event)"
-             placeholder="{{calculator.companyTotal| number:'1.2-2'}}" pattern="[0-9\\.]{8}">
+             numberOnly="^[0-9]+(\.[0-9]*){0,1}$"
+             placeholder="{{calculator.companyTotal| number:'1.2-2'}}">
     </div>
   </div>
 

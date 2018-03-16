@@ -3,13 +3,14 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
-import { MinWageComponent } from './min-wage/min-wage.component';
+import { MinWageComponent, NumberOnly } from './min-wage/min-wage.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    MinWageComponent
+    MinWageComponent,
+    NumberOnly
   ],
   imports: [
     BrowserModule,

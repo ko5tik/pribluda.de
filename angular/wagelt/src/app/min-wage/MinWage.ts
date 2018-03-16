@@ -9,7 +9,9 @@ export class MinWage {
   public constructor(public sodraRateWorker: number, // sodra paid  by worker
                      public sodraRateCompany: number, // sodra paid  by company,  alternative 0.317
                      public taxRateWorker: number, // income tax flat rate
-                     public minimalWage: number // configured minimal wage.  can be changed later
+                     public minimalWage: number, // configured minimal wage.  can be changed later
+                     public useNonTaxableMinimum: boolean, //  whether to use non taxable minimum
+                     public useVoluntaryRent: boolean // whether to increase rent voluntarily - 2%
   ) {
     this.wageBrutto = minimalWage;
   }
@@ -17,6 +19,7 @@ export class MinWage {
   // calculate  all the payments from brutto wage
   calulateFromBrutto(number: number) {
     console.log('called calc form brutto: ' + number);
+    console.log('taxable: ' + this.useNonTaxableMinimum);
     this.wageBrutto = this.roundMoney(number);
     this.wageNetto = this.roundMoney(this.wageBrutto - this.sodraAmountWorker - this.taxAmountWorker);
     this.companyTotal = this.wageBrutto + this.sodraAmountCompany;
@@ -33,21 +36,23 @@ export class MinWage {
 
     // take into account non taxable minimum
     // this is non taxable amount with SODRA9% taken out
-    if (this.wageNetto < 345.8) {
+    if (this.wageNetto < 345.8 && this.useNonTaxableMinimum) {
       // no taxes in this, bus sodra still taken off this
       this.wageBrutto = this.roundMoney(this.wageNetto / (1 - this.sodraRateWorker));
       console.log("under taxable minimum, brutto:" + this.wageBrutto);
-    } else if(this.wageNetto < 361) {
+    } else if (this.wageNetto < 361 && this.useNonTaxableMinimum) {
       //  we have  still 380 eur non taxable minimum,  so calc formula is
       //  b = ( n - 57 ) / 0.76
-      this.wageBrutto = this.roundMoney((this.wageNetto -57) / 0.76);
+      this.wageBrutto = this.roundMoney((this.wageNetto - 57) / 0.76);
       console.log("max taxable minimum, brutto:" + this.wageBrutto);
-    } else if (this.wageNetto >= 881.6) {
+    } else if (this.wageNetto >= 881.6 || !this.useNonTaxableMinimum) {
+      // in case non taxable minimum is not used,  fall back here
       // cut out for non taxable amount if 1160 bruto, corresponds to 881.6 netto
       // non taxable minimum no longer apply
       this.wageBrutto = this.roundMoney(this.wageNetto / (1 - this.sodraRateWorker - this.taxRateWorker));
       console.log("non taxable not applies, brutto:" + this.wageBrutto);
     } else {
+      // non taxable minimum applies here
       // after much calculation I came to the formula b= (n-01.5*580)/ 0.685
       this.wageBrutto = this.roundMoney((this.wageNetto - 87) / 0.685);
       console.log("non taxable minimum applies , brutto:" + this.wageBrutto);
@@ -68,7 +73,8 @@ export class MinWage {
 
 
   get sodraAmountWorker(): number {
-    return this.roundMoney(this.wageBrutto * this.sodraRateWorker);
+    //  do we use voluntary rent? if  -  then add 2%
+    return this.roundMoney(this.wageBrutto * (this.sodraRateWorker  + (this.useVoluntaryRent? 0.02:0)));
   }
 
   get sodraAmountCompany(): number {
@@ -77,7 +83,7 @@ export class MinWage {
 
   get taxAmountWorker(): number {
     var n = this.npd;
-
+    console.log("npd: " + n)
     // we are below minimum,  nothing to pay here
     if (this.wageBrutto < n) {
       return 0;
@@ -96,6 +102,10 @@ export class MinWage {
    */
 
   get npd(): number {
+    // if we do not use non taxable minimum , there is no minimum.
+    if (!this.useNonTaxableMinimum)
+      return 0;
+
     if (this.wageBrutto < 400) {
       return 380;
     }
