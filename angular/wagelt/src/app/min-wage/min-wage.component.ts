@@ -76,12 +76,11 @@ export class NumberOnly implements OnInit {
 
   //  externally configured regex /^[0-9]+(\.[0-9]*){0,1}$/g
   @Input() numberOnly: string = "^[0-9]+(\\.[0-9]*){0,1}$";
-  private oldValue = "";
+
 
   private regex: RegExp;
 
-  constructor(private el: ElementRef,
-              private render: Renderer2) {
+  constructor(private el: ElementRef) {
   }
 
   // initialisse regex here
