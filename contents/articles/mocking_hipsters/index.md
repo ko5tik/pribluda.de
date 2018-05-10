@@ -7,7 +7,7 @@ tags: jhipster, mock, jmockit, development, angular, js, javascript, maven
 lang: en
 ---
 
-Cool webapps nowadays afre made with lot of javascript and boilerplate code. [JHipster](https://www.jhipster.tech/) helps 
+Cool webapps nowadays are made with lot of javascript and boilerplate code. It is almost as bad as EIB.  [JHipster](https://www.jhipster.tech/) helps 
 you to  get your prototype up and running  in minutes (and it takes a lot more time to look arround at all the cool stuff
 that you do not have to write yourself by hand).  But you still have to code your business logic -  and of course test it. 
 How does it play together with mocking? 
@@ -135,7 +135,7 @@ Process finished with exit code 0
 ````
 
 
-So, JHipster and JMockit play together -   nice.  Now i can have easy test driven development with jHipster
+So, JHipster and JMockit play together - nice.  Now i can have easy test driven development with jHipster
 
 
 ### Useful links
