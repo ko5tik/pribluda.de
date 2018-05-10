@@ -1,7 +1,5 @@
 import {
-  Component, Directive, ElementRef, HostListener, Input, OnInit, Output, Renderer,
-  Renderer2
-} from '@angular/core';
+  Component, Directive, ElementRef, HostListener, Input, OnInit} from '@angular/core';
 import {MinWage} from './MinWage';
 
 
