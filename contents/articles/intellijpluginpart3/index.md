@@ -193,13 +193,14 @@ actual user.
 /**
  * facet configuration  -  holds data aboit config, provides editors 
  */
-public class PmFacetConfiguration implements FacetConfiguration {
+// IMPORTANT -  implement PersistentStateComponent so data will be actually saved
+public class PmFacetConfiguration implements FacetConfiguration, PersistentStateComponent<PmFacetConfiguration> {
 
     String databaseConnection;
     String username;
     String password;
 
-    // create and supply editor tabs for configuration parameters
+
     @Override
     public FacetEditorTab[] createEditorTabs(FacetEditorContext facetEditorContext, FacetValidatorsManager facetValidatorsManager) {
         return new FacetEditorTab[]{
@@ -231,7 +232,23 @@ public class PmFacetConfiguration implements FacetConfiguration {
     public void setPassword(String password) {
         this.password = password;
     }
+
+    //  saving
+    @Nullable
+    @Override
+    public PmFacetConfiguration getState() {
+        return this;
+    }
+
+    // loading 
+    @Override
+    public void loadState(@NotNull PmFacetConfiguration pmFacetConfiguration) {
+        databaseConnection = pmFacetConfiguration.getDatabaseConnection();
+        username = pmFacetConfiguration.getUsername();
+        password = pmFacetConfiguration.getPassword();
+    }
 }
+
 
 ````
 
