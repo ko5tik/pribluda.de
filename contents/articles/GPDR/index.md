@@ -2,7 +2,7 @@
 title: GPDR
 author: pribluda
 date: 2018-05-24
-template: article.jade
+template: article.pug
 lang: de
 tags: gpdr, datenschutz
 ---
@@ -20,4 +20,3 @@ zu speichern existoeren. Auch werden keine Cookies verwendet.  Alledings werden 
 geschaltet, und diese können eventuell Personenbezogene daten sammeln und verarbeiten.   Wenn ihr das nicht wollt,  nutzt 
 bitte einen Adblocker.
 
- 

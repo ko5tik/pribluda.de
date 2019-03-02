@@ -1,7 +1,7 @@
 ---
 title: Andject
 date: 2018-03-04
-template: article.jade
+template: article.pug
 tags: java, android, dependency, injection, ioc
 description: lightweight dependency injection for android
 ---

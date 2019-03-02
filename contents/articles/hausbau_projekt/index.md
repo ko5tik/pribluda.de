@@ -2,7 +2,7 @@
 title: Hausbau - es wird Projektiert
 author: pribluda
 date: 2018-04-18
-template: article.jade
+template: article.pug
 lang: de
 ---
 

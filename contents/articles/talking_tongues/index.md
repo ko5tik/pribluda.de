@@ -2,7 +2,7 @@
 title: Speaking in tongues
 author: pribluda
 date: 2018-02-09
-template: article.jade
+template: article.pug
 lang: en
 ---
 
@@ -33,7 +33,7 @@ First we mark our documents with proper meta tags:
 title: Spare, spare, Häusle baue!
 author: pribluda
 date: 2018-02-05
-template: article.jade
+template: article.pug
 tags: haus,vilnius,bau,project
 lang: de
 ---
@@ -50,7 +50,7 @@ module.exports = (env, callback) ->
     Genereate per language  overview pages collecting all the documents with proper tag
      ###
   defaults =
-    template: 'articles.jade' # template that renders pages
+    template: 'articles.pug' # template that renders pages
     filename: 'lang/%s/index.html' # directory containing generated language pages
     base: 'articles' # where do we start
 

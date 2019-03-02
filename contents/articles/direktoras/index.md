@@ -2,7 +2,7 @@
 title: От директораса слышу
 author: pribluda
 date: 2018-02-11
-template: article.jade
+template: article.pug
 lang: ru
 tags: литва. бизнес, зартплата, налоги, рассчет, содра
 ---

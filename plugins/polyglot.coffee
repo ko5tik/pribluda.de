@@ -3,7 +3,7 @@ module.exports = (env, callback) ->
     Genereate per language  overview pages collecting all the documents with proper tag
      ###
   defaults =
-    template: 'articles.jade' # template that renders pages
+    template: 'articles.pug' # template that renders pages
     filename: 'lang/%s/index.html' # directory containing generated language pages
     base: 'articles' # where do we start
 

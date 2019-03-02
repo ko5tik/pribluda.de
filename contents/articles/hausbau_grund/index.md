@@ -2,7 +2,7 @@
 title: Spare, spare, Häusle baue!
 author: pribluda
 date: 2018-02-05
-template: article.jade
+template: article.pug
 tags: haus,vilnius,bau,project
 lang: de
 ---

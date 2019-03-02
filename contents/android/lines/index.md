@@ -1,7 +1,7 @@
 ---
 title: Lines game
 date: 2018-01-30
-template: article.jade
+template: article.pug
 icon: icon.png
 ---
 

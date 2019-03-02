@@ -2,7 +2,7 @@
 title: Code archeology
 author: pribluda
 date: 2018-01-31
-template: article.jade
+template: article.pug
 lang: en
 ---
 

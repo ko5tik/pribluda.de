@@ -2,7 +2,7 @@
 title: Filtering input with angular2
 author: pribluda
 date: 2018-03-16
-template: article.jade
+template: article.pug
 lang: en
 tags: angular, input, numeric, component, directive
 description: filtering input with angular with regular expressions

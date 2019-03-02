@@ -2,7 +2,7 @@
 title: Moving site  to wintersmith
 author: pribluda
 date: 2018-01-29
-template: article.jade
+template: article.pug
 ---
 
 Recently I had to upgrade server, and  found that ancient technologies are not available anymore. So I had to look for a new solution

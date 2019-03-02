@@ -4,7 +4,7 @@ module.exports = (env, callback) ->
       e.g. "paginator": {"perPage": 10} ###
 
   defaults =
-    template: 'index.jade' # template that renders pages
+    template: 'index.pug' # template that renders pages
     articles: 'articles' # directory containing contents to paginate
     first: 'index.html' # filename/url for first page
     filename: 'page/%d/index.html' # filename for rest of pages
@@ -23,7 +23,7 @@ module.exports = (env, callback) ->
     articles = articles.concat  contents['android']._.directories.map (item) -> item.index
     articles = articles.concat  contents['tools']._.directories.map (item) -> item.index
     # skip articles that does not have a template associated
-    articles = articles.filter (item) -> item.template is 'article.jade'
+    articles = articles.filter (item) -> item.template is 'article.pug'
     # sort article by date
     articles.sort (a, b) -> b.date - a.date
     return articles

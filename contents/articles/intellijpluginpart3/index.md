@@ -2,7 +2,7 @@
 title: Writing IntelliJ Idea plugin . Part 3 - Module and facet
 author: pribluda
 date: 2018-06-03
-template: article.jade
+template: article.pug
 tags: jetbrains, intellij, idea, plugin, java, module,facet,configuration,db
 lang: en
 ---

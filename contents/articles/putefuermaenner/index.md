@@ -2,7 +2,7 @@
 title: Klauen sie zuerst den Backofen
 author: pribluda
 date: 2018-02-26
-template: article.jade
+template: article.pug
 tags: pute, kochen,foodporn,backen,einfach,
 description: Lekere und einfache Gericht aus der Pute, nach faulen Männer Art.
 lang: de

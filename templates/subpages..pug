@@ -14,7 +14,7 @@ block content
     each app in page.parent._.directories.sort(function(a,b){ a.index.title > b.index.title})
         - var idx = app.index;
         - console.log(idx.title)
-        if  "article.jade" == app.index.template
+        if  "article.pug" == app.index.template
             article.article.intro
                 header
                     h2

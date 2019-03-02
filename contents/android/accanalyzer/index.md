@@ -1,7 +1,7 @@
 ---
 title: Acceleration spectrum analyzer
 date: 2018-02-09
-template: article.jade
+template: article.pug
 icon: icon.png
 ---
 

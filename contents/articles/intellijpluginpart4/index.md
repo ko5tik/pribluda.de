@@ -2,7 +2,7 @@
 title: Writing IntelliJ Idea plugin . Part 4 - Taming grammar recursion
 author: pribluda
 date: 2018-06-17
-template: article.jade
+template: article.pug
 tags: jetbrains, intellij, idea, plugin, java, module,facet,configuration, bnf, perser, lexer, jflex
 lang: en
 ---

@@ -2,7 +2,7 @@
 title: Writing IntelliJ Idea plugin . Part 2 - Parser and lexer
 author: pribluda
 date: 2018-05-23
-template: article.jade
+template: article.pug
 tags: jetbrains, intellij, idea, plugin, java, jflex, parser, bnf, yyinitial, coloring
 lang: en
 ---

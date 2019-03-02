@@ -2,7 +2,7 @@
 title: Meine Pendelstrecke
 author: pribluda
 date: 2018-03-08
-template: article.jade
+template: article.pug
 lang: de
 ---
 

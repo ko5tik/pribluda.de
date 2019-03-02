@@ -1,7 +1,7 @@
 ---
 title: Projects
 date: 2018-01-29
-template: subpages.jade
+template: subpages.pug
 ---
 
 ### Overview
@@ -12,4 +12,3 @@ for a living.
 
 
 
- 

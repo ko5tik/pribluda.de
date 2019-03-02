@@ -2,7 +2,7 @@
 title: Mocking hipsters
 author: pribluda
 date: 2018-05-10
-template: article.jade
+template: article.pug
 tags: jhipster, mock, jmockit, development, angular, js, javascript, maven
 lang: en
 ---

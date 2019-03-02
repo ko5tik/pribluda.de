@@ -2,7 +2,7 @@
 title: IntelliJ Idea plugin . Part 6  - Spacing
 author: pribluda
 date: 2018-08-09
-template: article.jade
+template: article.pug
 tags: jetbrains, intellij, idea, plugin, java, module,facet,configuration, bnf, perser, lexer, jflex, pretty, formatting
 lang: en
 ---

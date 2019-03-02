@@ -2,7 +2,7 @@
 title: Flight LH889
 author: pribluda
 date: 2018-02-11
-template: article.jade
+template: article.pug
 lang: en
 tags: travel, airline, pictires, sunrise
 ---

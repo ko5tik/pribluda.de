@@ -2,7 +2,7 @@
 title: IntelliJ Idea plugin . Part 5  - Prettyfying
 author: pribluda
 date: 2018-08-08
-template: article.jade
+template: article.pug
 tags: jetbrains, intellij, idea, plugin, java, module,facet,configuration, bnf, perser, lexer, jflex, pretty, formatting
 lang: en
 ---
@@ -151,4 +151,3 @@ Most interesting part, where all the stuff happens. It is responsible for creati
 (which get indented). More about it in the next parts
 
 * [Spacing model](../intellijpluginpart6)
- 

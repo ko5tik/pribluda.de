@@ -1,7 +1,7 @@
 ---
 title: Various tools
 date: 2018-01-30
-template: subpages.jade
+template: subpages.pug
 ---
 
 ### Tools etc.   
