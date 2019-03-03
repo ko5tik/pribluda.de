@@ -10,7 +10,7 @@ lang: en
 In the beginning our parser was pretty simple,    but progrramming language is complicated, has operators and also
 expressions.  Brute force approach does not work well for big files due to recursion.
 
-<span class="more"/>
+<span class="more"></span>
 
 ### Finishing parser - Taming recursion
 

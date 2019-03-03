@@ -11,7 +11,7 @@ description: filtering input with angular with regular expressions
 In my [wage calulator](/tools/taxlt/)  I would like to recalculate values as user types them. But I would like to prevent user
 from entering invalid numbers. 
 
-<span class="more"/>
+<span class="more"></span>
 
 Of course standart angular valudators work very well,   but only after input is done -  and then it is not always possible 
 to recover. Better solution would  be to prevent user from entering BS in a first place. 

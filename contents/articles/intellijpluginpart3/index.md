@@ -10,7 +10,7 @@ lang: en
 Since  out sources are deployed to database, and executerd from there - we would profit from proper module and 
 facet providing configuration (database connection) and predefined directory structure. 
 
-<span class="more"/>
+<span class="more"></span>
 
 First time here? Loog for [Part 1](../intellijpluginpart1) and [Part 2](../intellijpluginpart2)
 

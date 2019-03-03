@@ -10,7 +10,7 @@ lang: en
 Spacing provider is responsible for managemet ef excess spaces  -  like trailing whitespaces  on line ends or 
 after parethesises or whatever.   It is created by **FormattingModelBuilder**
 
-<span class="more"/>
+<span class="more"></span>
 
 ### MMTalkFormattingBuildingModel
 

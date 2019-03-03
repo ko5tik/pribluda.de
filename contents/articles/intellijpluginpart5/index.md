@@ -11,7 +11,7 @@ Every programming language has own needs for formatting to better reflect struct
 in between of pascal, java and lisp with square brackets on top - so  standart formatter is doing  really poor job.   We 
 need better one! Anyway -  tutroals of jetbrains are very scetchy on this topic so I will try to shine some light on it. 
 
-<span class="more"/>
+<span class="more"></span>
 
 
 ### Formatting and prettifying

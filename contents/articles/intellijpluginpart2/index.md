@@ -9,7 +9,7 @@ lang: en
 
 So, we have a plugin, and it recognizes files by extension. We can write parser now.  
 
-<span class="more"/>
+<span class="more"></span>
 
 
 ### It's a kind of (black) magic

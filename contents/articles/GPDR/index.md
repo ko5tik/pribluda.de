@@ -9,7 +9,7 @@ tags: gpdr, datenschutz
 
 GPDR Erklärung.   Muss halt sein.  Bitte aufmerksam lesen. 
 
-<span class="more"/>
+<span class="more"></span>
 
 
 ### GPDR
