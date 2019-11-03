@@ -1,14 +1,14 @@
 ---
 title: JSF, Selenium and black magic
 author: pribluda
-date: 2019-10-21
+date: 2019-11-03
 template: article.pug
 lang: en
 tags: js, selenium, jsf, java, testing
 description: Testing JSF - selenium and black magic
 ---
 
-JSF is old and reputable technology,  and  while not really modern, it is still present in field, and applications have to be maintained. And, of course, tested.  Selenium is a great tool for this,  but when pages are dynamically changed by backend it becomes challenging. 
+JSF is old and reputable technology,  and  while not really modern, it is still present in field, and applications have to be maintained. And -  of course - tested.  Selenium is a great tool for this,  but when pages are dynamically changed by backend it becomes challenging. 
 
  <span class="more"></span>
  
