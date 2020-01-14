@@ -3,7 +3,7 @@ title: Закрытие трэйл-сезона -  Laukinis trail – Dūkštos
 author: pribluda
 date: 2019-11-24
 template: article.pug
-lang: en
+lang: ru
 tags: бег, трэйл, литва
 description: Отчет о трэйле в дукштосе
 ---
