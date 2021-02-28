@@ -10,12 +10,16 @@ icon: icon.png
 
 
 <span class="icon">
+
 ![icon](icon.png)
+
 </span>
 
 Logic and concentration game. Arrange color balls in straight lines of 5 
 or more to remove them and earn points. New balls are placed on every turn. 
-Game is open end - as long as you have space you can play
+Game is open end - as long as you have space you can continue play.  
+
+[See how others are doing it](./highscore.html)
 
 <span class="more"></span>
 
@@ -30,7 +34,7 @@ Beware: this is major time sink.
 <a href='https://play.google.com/store/apps/details?id=de.pribluda.games.android.lines&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'><img alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png'/></a>
 
 
-Or Get APK from here: [Lines.apk](lines.apk)
+Or Get APK from here: [./lines-release.aab](lines-release.aab)
 
 
 

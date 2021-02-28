@@ -1,0 +1,7 @@
+ Building:
+
+ wintersmith build
+
+ Deplzing
+
+ cd build;  scp -r ./*
