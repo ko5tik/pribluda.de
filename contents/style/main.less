@@ -40,33 +40,39 @@ body {
   top: 0;
   right: 0;
   width: 100%;
+
   a {
     display: inline-block;
     color: @nav-text;
     text-decoration: none;
     text-align: center;
     padding: 0.25em 0.25em;
+
     &:hover {
       color: lighten(@nav-text, 30%);
       background: saturate(@nav-background, 30);
     }
   }
+
   ul {
     list-style-type: none;
     text-decoration: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
+
     li {
       float: left;
       margin: 0;
       padding: 0;
 
     }
+
     li.profiles {
       float: right;
       margin: 0;
       padding: 0;
+
       a {
         padding: 0.25em 0.25em;
       }
@@ -246,22 +252,27 @@ footer .copy, footer .copy a {
 
 .article {
   margin: 3em 0 4em;
+
   header {
     border-top: 1px dashed #d2d2d2;
+
     header h2 {
       font-style: italic;
       text-align: center;
       font-weight: 400;
       margin: 0.8em 0;
       font-size: 1.4em;
+
       a {
         text-decoration: none;
       }
     }
+
     .date {
       text-align: center;
       font-size: 0.8em;
       margin-top: -0.7em;
+
       span {
         background-color: #f8f8f8;
         padding: 0 0.7em;
@@ -269,11 +280,13 @@ footer .copy, footer .copy a {
 
     }
   }
+
   .content {
     img {
       display: block;
       width: 100%;
     }
+
     img[alt="game-icon"] {
       width: 64px;
       height: 64px;
@@ -477,12 +490,14 @@ code.lang-markdown .bullet {
     margin-right: 1em;
 
   }
+
   label {
 
     align: left;
     float: left;
     margin-bottom: 0.5em;
   }
+
   .result {
     align: right;
     float: right;
@@ -492,6 +507,29 @@ code.lang-markdown .bullet {
 
 }
 
+/*   highscore tables */
+
+table.scoreTable {
+  border-collapse: collapse;
+}
+.header {
+  font-size: large;
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+.header tr {
+  border-bottom: black 1pt solid;
+}
+
+.rightAligned {
+  text-align: right;
+}
+
+tr.even {
+  background-color: #c2ffb4;
+}
+
 /* media queries */
 
 @media (min-width: 1600px) {
@@ -499,9 +537,8 @@ code.lang-markdown .bullet {
     font-size: 26px;
   }
 
-  input[type="text"]
-  {
-    font-size:26px;
+  input[type="text"] {
+    font-size: 26px;
   }
 }
 
@@ -510,9 +547,8 @@ code.lang-markdown .bullet {
     font-size: 18px;
   }
 
-  input[type="text"]
-  {
-    font-size:18px;
+  input[type="text"] {
+    font-size: 18px;
   }
 }
 

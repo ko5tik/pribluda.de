@@ -2,8 +2,8 @@ import React from "react";
 import * as moment from "moment";
 
 
-const scores = 'https://www.pribluda.de:8443/public/scores?since=0';
-const stats = 'https://www.pribluda.de:8443/public/stats';
+const scores = 'https://www.pribluda.de/api/lines/public/scores?since=0';
+const stats = 'https://www.pribluda.de/api/lines/public/stats';
 
 class App extends React.Component {
     constructor(props) {
@@ -32,14 +32,14 @@ class App extends React.Component {
         const {scores} = this.state
 
         return (
-            <div>
-                <dl className="header">
+            <div id="highscores">
+                <dl id="stats" >
                     <dt>Total games:</dt>
                     <dd>{this.state.stats.totalGames}</dd>
                     <dt>Total time spent (D:H:M:S) :</dt>
                     <dd>{msToTime(this.state.stats.totalTime)}</dd>
                 </dl>
-                <table>
+                <table className="scoreTable">
                     <thead className="header">
                     <tr>
                         <td className="rightAligned">#</td>
@@ -54,7 +54,7 @@ class App extends React.Component {
                         scores.map(function (score, idx) {
                                 return (
                                     <tr className={idx % 2 == 0 ? 'even' : 'odd'}>
-                                        <td className="rightAligned">{idx + 1}</td>
+                                        <td className="rightAligned">{idx + 1}.</td>
                                         <td>{score.name}</td>
                                         <td className="rightAligned">{score.points}</td>
                                         <td className="rightAligned">{msToTime(score.duration)}</td>

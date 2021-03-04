@@ -6,7 +6,9 @@ icon: icon.png
 ---
 
 <span class="icon">
+
 ![icon](icon.png)
+
 </span>
 
 kind of falling blocks game -  but you have to match colors instead of shapes

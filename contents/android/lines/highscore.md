@@ -9,7 +9,7 @@ template: article.pug
 
 <script src="./static/js/runtime-main.a034f8cc.js"></script>
 <script src="./static/js/2.92475852.chunk.js"></script>
-<script src="./static/js/main.793aa84f.chunk.js"></script>
+<script src="./static/js/main.c47bcf4e.chunk.js"></script>
 
 
 
