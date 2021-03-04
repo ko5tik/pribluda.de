@@ -34,12 +34,12 @@ Beware: this is major time sink.
 <a href='https://play.google.com/store/apps/details?id=de.pribluda.games.android.lines&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'><img alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png'/></a>
 
 
-Or Get APK from here: [./lines-release.aab](lines-release.aab)
+Or Get APK from here if zou do not like  android app store: [./lines-release.aab](lines-release.aab)
 
 
 
 ### Changelog
-
+ - 2.0.6: Highscore system works again.  New major release
  - 1.30: Spanish translation
  - 1.25: Reduced necessary permissions and improved android market visibility
  - 1.24: Improved shadow highscores - now displays player name if available
