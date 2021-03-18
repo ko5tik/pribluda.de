@@ -5,6 +5,20 @@ import * as moment from "moment";
 const scores = 'https://www.pribluda.de/api/lines/public/scores?since=0';
 const stats = 'https://www.pribluda.de/api/lines/public/stats';
 
+
+function ScoreEntry(props) {
+    const {index, item} = props;
+    return (
+        <tr className={index % 2 == 0 ? 'even' : 'odd'}>
+            <td className="rightAligned">{index + 1}.</td>
+            <td>{item.name}</td>
+            <td className="rightAligned">{item.points}</td>
+            <td className="rightAligned">{msToTime(item.duration)}</td>
+            <td className="rightAligned">{msToDate(item.time)}</td>
+        </tr>)
+
+}
+
 class App extends React.Component {
     constructor(props) {
         super(props);
@@ -33,7 +47,7 @@ class App extends React.Component {
 
         return (
             <div id="highscores">
-                <dl id="stats" >
+                <dl id="stats">
                     <dt>Total games:</dt>
                     <dd>{this.state.stats.totalGames}</dd>
                     <dt>Total time spent (D:H:M:S) :</dt>
@@ -51,18 +65,7 @@ class App extends React.Component {
                     </thead>
                     <tbody>
                     {
-                        scores.map(function (score, idx) {
-                                return (
-                                    <tr className={idx % 2 == 0 ? 'even' : 'odd'}>
-                                        <td className="rightAligned">{idx + 1}.</td>
-                                        <td>{score.name}</td>
-                                        <td className="rightAligned">{score.points}</td>
-                                        <td className="rightAligned">{msToTime(score.duration)}</td>
-                                        <td className="rightAligned">{msToDate(score.time)}</td>
-                                    </tr>
-                                )
-                            }
-                        )
+                        scores.map((item, index) => <ScoreEntry item={item} index={index} key={item.uuid}/>)
                     }
                     </tbody>
                 </table>
@@ -71,19 +74,21 @@ class App extends React.Component {
     }
 
 }
+
 function msToTime(duration) {
     var milliseconds = parseInt((duration % 1000) / 100),
         seconds = Math.floor((duration / 1000) % 60),
         minutes = Math.floor((duration / (1000 * 60)) % 60),
-        hours = Math.floor((duration / (1000 * 60 * 60)) %24),
-        days = Math.floor((duration / (1000 * 60 * 60 *24 )));
+        hours = Math.floor((duration / (1000 * 60 * 60)) % 24),
+        days = Math.floor((duration / (1000 * 60 * 60 * 24)));
 
     hours = (hours < 10) ? "0" + hours : hours;
     minutes = (minutes < 10) ? "0" + minutes : minutes;
     seconds = (seconds < 10) ? "0" + seconds : seconds;
 
-    return  days + ":" + hours + ":" + minutes + ":" + seconds ;
+    return days + ":" + hours + ":" + minutes + ":" + seconds;
 }
+
 function msToDate(s) {
     return moment.unix(s / 1000).format("DD MMM YYYY hh:mm a")
 }

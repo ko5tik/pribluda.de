@@ -1,8 +1,11 @@
+Development:
+ wintersmith preview
+
  Building:
 
  wintersmith build
 
- Deplzing
+ Deploying
 
  cd build;  scp -r ./* www.pribluda.de:/var/customers/webs/pribluda
 
