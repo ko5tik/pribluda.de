@@ -1,7 +1,7 @@
 ---
 title: Saving game highscores
 author: pribluda
-date: 2022-03-03
+date: 2021-03-03
 template: article.pug
 lang: en
 tags: android, java,  spring,  webservice, docker

@@ -1,7 +1,7 @@
 ---
 title: Display Highscores on the web page
 author: pribluda
-date: 2022-03-04
+date: 2021-03-04
 template: article.pug
 lang: en
 tags: android, java,  spring,  webservice, docker, apache , mod_proxy

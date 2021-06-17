@@ -1,7 +1,7 @@
 ---
 title: JHipster and reactive feign clients
 author: pribluda
-date: 2022-05-26
+date: 2021-05-26
 template: article.pug
 lang: en
 tags: java, jhipster, openapi, jwt, spring, reactive, feign, openfeign,  openapi, openapi-generator, gradle

@@ -1,7 +1,7 @@
 ---
 title: Mating JHipster microservices to each ohter
 author: pribluda
-date: 2022-04-22
+date: 2021-04-22
 template: article.pug
 lang: en
 tags: java, jhipster, openapi, jwt, spring

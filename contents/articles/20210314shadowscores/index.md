@@ -1,7 +1,7 @@
 ---
 title: More credit for top players - shadow scores
 author: pribluda
-date: 2022-03-14
+date: 2021-03-14
 template: article.pug
 lang: en
 tags: android, java,  spring,  webservice, docker, apache ,  lines games
